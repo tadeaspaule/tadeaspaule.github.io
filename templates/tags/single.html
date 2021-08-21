@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block rss %}
+  {% set rss_path = "tags/" ~ term.name ~ "/rss.xml" %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=rss_path, trailing_slash=false)}}">
+{% endblock rss %}
+
+{% block content %}
+<h2 class="title fade">
+	#{{ term.name }}
+</h1>
+<ul>
+	{% for entry in term.pages %}
+		{% if entry.extra.url %}
+			{{ macros::link(data=entry, icon=true) }}
+		{% else %}
+			{{ macros::post(data=entry, excerpt=true, icon=true) }}
+		{% endif %}
+	{% endfor %}
+</ul>
+{% endblock content %}
+

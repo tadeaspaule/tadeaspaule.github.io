@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ macros::paginator(paginator=paginator)}}
+<ul>
+	{% for link in paginator.pages %}
+		{{ macros::link(data=link) }}
+	{% endfor %}
+
+</ul>
+{{ macros::paginator(paginator=paginator)}}
+{% endblock content %}
+

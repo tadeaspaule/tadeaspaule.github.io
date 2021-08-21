@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import "variables";
+
+body {
+	font-family: $font;
+	margin: 2px 14px;
+	background: black;
+	* {
+		color: $text-color;
+	}
+	header {
+		display:flex;
+		flex-direction:row;
+		align-items: end;
+		h1 a {
+			text-decoration: none;
+		}
+		span {
+			font-style: italic;
+			margin-bottom: 5px;
+			margin-left: 6px;
+		}
+	}
+}
+
+.paginator {
+	margin: 5px 0px;
+	span {
+		font-size: 20px;
+	}
+	.counter {
+		margin: 0px 5px;
+		font-size: 15px;
+	}
+}
+
+.fade {
+	font-weight: 400;
+	color: $fade-color;
+}
+
+h1,h2,h3,h4,h5 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 2px;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.link-sidebar {
+	flex: 0;
+	min-width: 300px;
+	margin-top: -38px;
+	font-size: 14px;
+	// padding-right: 10px;
+}
+
+.details {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 4px;
+	.tag {
+		color: $link-color;
+		margin: 0px 3px;
+		&::before {
+			content: "#"
+		}
+	}
+}
+
+.link, .post {
+	margin-bottom: 8px;
+}
+
+.link h3 a {
+	&::before {
+		// content: "\02197 "
+	}
+}
+

@@ -1,0 +1,13 @@
+{% macro details(data) -%}
+	<div class="details">
+		<span class="date fade">{{ data.date }}</span>
+		{% if data.taxonomies %}
+			{% for tag in data.taxonomies.tags %}
+				{% if tag != "share" %}
+				<span class="tag"><a href="/tags/{{tag}}">{{ tag }}</a></span>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	</div>
+{% endmacro details -%}
+

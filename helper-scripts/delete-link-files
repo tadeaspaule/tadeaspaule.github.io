@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+import os
+import sqlite3
+
+# remove old link files
+for linkfile in os.listdir("content/links"):
+    if not linkfile.startswith("_"):
+        os.remove(f"content/links/{linkfile}")
+
+# get new links
+con = sqlite3.connect(os.environ["HOME"] + "/.local/share/buku/bookmarks.db")
+cur = con.cursor()
+links = cur.execute("select url, metadata, desc, tags, time_added from bookmarks where tags like '%share%' order by time_added desc").fetchall()
+def clean_link_title(title: str):
+    return "".join(c for c in title if c.isalnum())
+def link_to_file(url: str, title: str, desc: str, tags: list, date: str):
+    return (
+        f'+++\n'
+        f'title="{title}"\n'
+        f'description="{desc}"\n'
+        f'date={date[:10]}\n'
+        f'[taxonomies]\n'
+        'tags=[' + ",".join("\"" + t + "\"" for t in tags) + ']\n'
+        "[extra]\n"
+        f'url="{url}"\n'
+        "+++\n"
+    )
+
+for l in links:
+    with open(f"content/links/{clean_link_title(l[1])}.md", "w+") as f:
+        cleaned_tags = [t for t in l[3].split(",") if len(t) > 0]
+        f.write(link_to_file(l[0], l[1], l[2], cleaned_tags, l[4]))
+

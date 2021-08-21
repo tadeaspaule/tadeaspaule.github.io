@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+	<div style="flex: 1; min-width: 500px">
+		{% set posts = get_section(path="posts/_index.md") %}
+		{% for post in posts.pages | slice(end=10) %}
+			{{ macros::post(data=post, excerpt=true) }}
+		{% endfor %}
+
+	</div>
+	<div class="link-sidebar">
+		<h3 class="fade" style="margin-bottom: 6px;">Recent links</h3>
+		{% set links = get_section(path="links/_index.md") %}
+		{% for link in links.pages %}
+			{{ macros::link(data=link) }}
+		{% endfor %}
+	</div>
+
+{% endblock content %}

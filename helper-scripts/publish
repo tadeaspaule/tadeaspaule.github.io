@@ -1,0 +1,17 @@
+#!/bin/bash
+
+./delete-link-files
+./prepare
+zola build
+./delete-link-files
+
+cd public
+echo 'tadeas.dev' > CNAME
+
+git init
+git add -A
+git commit -m "deploy"
+git push -f git@github.com:tadeaspaule/tadeaspaule.github.io.git master:gh-pages
+
+cd -
+

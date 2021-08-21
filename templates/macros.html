@@ -1,0 +1,43 @@
+{% macro link(data, icon=false) -%}
+	<div class="link">
+		<h3><a href="{{ data.extra.url }}">
+				{% if icon %}⤤{% endif %}
+				{{ data.title }}
+		</a></h3>
+		{{ misc::details(data=data) }}
+		<div class="link-desc">
+			{{ data.description }}
+		</div>
+	</div>
+
+{% endmacro link -%}
+
+{% macro post(data, excerpt=false, icon=false) -%}
+	<div class="post">
+		<h3><a href="{{ data.permalink }}">
+				{% if icon %}✎{% endif %}
+				{{ data.title }}
+		</a></h3>
+		{{ misc::details(data=data) }}
+		<div class="post-body">
+			{% if excerpt %}
+				{{ data.description }}
+			{% else %}
+				{{ data.content | safe }}
+			{% endif %}
+		</div>
+	</div>
+
+{% endmacro post -%}
+
+{% macro paginator(paginator) %}
+	{% if paginator.number_pagers > 1 %}
+		<div class="paginator">
+			<span><a href="{{paginator.first}}">«</a></span>
+			<span><a href="{{paginator.previous}}">‹</a></span>
+			<span class="counter">{{paginator.current_index}}/{{paginator.number_pagers}}</span>
+			<span><a href="{{paginator.next}}">›</a></span>
+			<span><a href="{{paginator.last}}">»</a></span>
+		</div>
+	{% endif %}
+{% endmacro %}
