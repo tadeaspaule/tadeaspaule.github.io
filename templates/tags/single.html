@@ -7,16 +7,18 @@
 
 {% block content %}
 <h2 class="title fade">
+	{% set tag_data = load_data(path="content/tag-info.json") %}
 	#{{ term.name }}
+	{% if tag_data is containing(term.name) %}
+	<span class="tag-alt">({{ tag_data | get(key=term.name,default="") }})</span>
+	{% endif %}
 </h1>
-<ul>
-	{% for entry in term.pages %}
-		{% if entry.extra.url %}
-			{{ macros::link(data=entry, icon=true) }}
-		{% else %}
-			{{ macros::post(data=entry, excerpt=true, icon=true) }}
-		{% endif %}
-	{% endfor %}
-</ul>
+{% for entry in term.pages %}
+	{% if entry.extra.url %}
+		{{ macros::link(data=entry, icon=true) }}
+	{% else %}
+		{{ macros::post(data=entry, excerpt=true, icon=true) }}
+	{% endif %}
+{% endfor %}
 {% endblock content %}
 
