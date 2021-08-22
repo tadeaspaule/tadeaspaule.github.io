@@ -2,11 +2,9 @@
 
 {% block content %}
 {{ macros::paginator(paginator=paginator)}}
-<ul>
-	{% for page in paginator.pages %}
-		{{ macros::post(data=page, excerpt=true) }}
-	{% endfor %}
-</ul>
+{% for page in paginator.pages %}
+	{{ macros::post(data=page, excerpt=true) }}
+{% endfor %}
 {{ macros::paginator(paginator=paginator)}}
 {% endblock content %}
 

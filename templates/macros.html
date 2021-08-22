@@ -1,6 +1,6 @@
 {% macro link(data, icon=false) -%}
 	<div class="link">
-		<h3><a href="{{ data.extra.url }}">
+		<h3><a target="_blank" href="{{ data.extra.url }}">
 				{% if icon %}⤤{% endif %}
 				{{ data.title }}
 		</a></h3>

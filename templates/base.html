@@ -15,16 +15,40 @@
 <body>
 	<header>
 		<h1><a href="/">tadeas.dev</a></h1>
-		<span><a href="/tags/doing">doing</a></span>
-		<span><a href="/tags/thinking">thinking</a></span>
-		<span><a href="/links">linking</a></span>
+		<span><a href="/rss">rss</a></span>
+		<span><a href="/about">about</a></span>
+		<span><a target="_blank" href="https://github.com/tadeaspaule">github</a></span>
 	</header>
 
-	<section class="section">
-		<div class="container">
-			{% block content %} {% endblock %}
-		</div>
-	</section>
+	<div class="page-content">
+		<section class="section">
+			<div class="container">
+				<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+					<div style="flex: 1; min-width: 500px">
+						{% block content %} {% endblock %}
+					</div>
+					{% if current_path and config.extra.pages_with_sidebar is containing(current_path) %}
+					<div class="sidebar">
+						<h3 class="fade" style="margin-bottom: 6px;">
+							Recent links
+							<a href="/links/rss.xml">rss</a>
+						</h3>
+						{% set links = get_section(path="links/_index.md") %}
+						{% for link in links.pages %}
+							{{ macros::link(data=link) }}
+						{% endfor %}
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		This site is built using <a href="https://getzola.org" target="_blank">Zola</a>.
+		The content for this site is <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>.
+		The <a href="https://github.com/tadeaspaule/tadeaspaule.github.io" target="_blank">code for this site</a> is <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>.
+	</footer>
 </body>
 
 </html>

@@ -2,12 +2,9 @@
 
 {% block content %}
 {{ macros::paginator(paginator=paginator)}}
-<ul>
-	{% for link in paginator.pages %}
-		{{ macros::link(data=link) }}
-	{% endfor %}
-
-</ul>
+{% for link in paginator.pages %}
+	{{ macros::link(data=link) }}
+{% endfor %}
 {{ macros::paginator(paginator=paginator)}}
 {% endblock content %}
 
