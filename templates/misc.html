@@ -3,7 +3,7 @@
 		<span class="date fade">{{ data.date }}</span>
 		{% if data.taxonomies %}
 			{% for tag in data.taxonomies.tags %}
-				{% if tag != "share" %}
+				{% if tag != "s" %}
 				<span class="tag"><a href="/tags/{{tag}}">{{ tag }}</a></span>
 				{% endif %}
 			{% endfor %}

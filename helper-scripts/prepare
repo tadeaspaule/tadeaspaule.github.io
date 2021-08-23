@@ -6,7 +6,7 @@ import sqlite3
 # get new links
 con = sqlite3.connect(os.environ["HOME"] + "/.local/share/buku/bookmarks.db")
 cur = con.cursor()
-links = cur.execute("select url, metadata, desc, tags, time_added from bookmarks where tags like '%share%' order by time_added desc").fetchall()
+links = cur.execute("select url, metadata, desc, tags, time_added from bookmarks where tags like '%,s,%' order by time_added desc").fetchall()
 def clean_link_title(title: str):
     return "".join(c for c in title if c.isalnum())
 def link_to_file(url: str, title: str, desc: str, tags: list, date: str):
