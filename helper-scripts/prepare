@@ -10,11 +10,12 @@ links = cur.execute("select url, metadata, desc, tags, time_added from bookmarks
 def clean_link_title(title: str):
     return "".join(c for c in title if c.isalnum())
 def link_to_file(url: str, title: str, desc: str, tags: list, date: str):
+    datetime_rfc_format = date[:10] + "T" + date[11:] + "Z"
     return (
         f'+++\n'
         f'title="{title}"\n'
         f'description="{desc}"\n'
-        f'date={date[:10]}\n'
+        f'date={datetime_rfc_format}\n'
         f'[taxonomies]\n'
         'tags=[' + ",".join("\"" + t + "\"" for t in tags) + ']\n'
         "[extra]\n"
