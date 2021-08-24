@@ -2,4 +2,4 @@
 
 ./helper-scripts/delete-link-files
 ./helper-scripts/prepare
-zola serve
+zola serve --drafts
