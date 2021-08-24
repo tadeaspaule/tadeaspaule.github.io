@@ -2,10 +2,12 @@
 
 {% block content %}
 
-<h1 class="title">{{ page.title }}</h1>
+<h1 class="title">{{ page.title | markdown(inline=true) | safe }}</h1>
 {{ misc::details(data=page) }}
 
 {{ page.content | safe }}
+
+{{ page.title | markdown(inline=true) | safe }}
 
 {% endblock content %}
 

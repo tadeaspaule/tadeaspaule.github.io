@@ -2,11 +2,13 @@
 	<div class="link">
 		<h3><a target="_blank" href="{{ data.extra.url }}">
 				{% if icon %}⤤{% endif %}
-				{{ data.title }}
+				{{ data.title | markdown(inline=true) | safe }}
 		</a></h3>
 		{{ misc::details(data=data) }}
 		<div class="link-desc">
-			{{ data.description }}
+			{% if data.description %}
+				{{ data.description | markdown(inline=true) | safe }}
+			{% endif %}
 		</div>
 	</div>
 
@@ -16,13 +18,13 @@
 	<div class="post">
 		<h3><a href="{{ data.permalink }}">
 				{% if icon %}✎{% endif %}
-				{{ data.title }}
+				{{ data.title | markdown(inline=true) | safe }}
 		</a></h3>
 		{{ misc::details(data=data) }}
 		<div class="post-body">
-			{% if excerpt %}
-				{{ data.description }}
-			{% else %}
+			{% if excerpt and data.description %}
+				{{ data.description | markdown(inline=true) | safe }}
+			{% elif excerpt == false %}
 				{{ data.content | safe }}
 			{% endif %}
 		</div>
