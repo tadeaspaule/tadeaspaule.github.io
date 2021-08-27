@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ macros::paginator(paginator=paginator)}}
+{% for page in paginator.pages %}
+<h3><a target="_blank" href="{{ page.extra.url }}">
+			{{ page.title | markdown(inline=true) | safe }}
+</a></h3>
+{{ misc::details(data=page) }}
+{% endfor %}
+{{ macros::paginator(paginator=paginator)}}
+{% endblock content %}
+

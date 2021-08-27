@@ -5,9 +5,11 @@
 <h1 class="title">{{ page.title | markdown(inline=true) | safe }}</h1>
 {{ misc::details(data=page) }}
 
-{{ page.content | safe }}
+{% if page.draft %}
+[DRAFT]
+{% endif %}
 
-{{ page.title | markdown(inline=true) | safe }}
+{{ page.content | safe }}
 
 {% endblock content %}
 

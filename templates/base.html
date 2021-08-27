@@ -13,35 +13,34 @@
 </head>
 
 <body>
-	<header>
-		<h1><a href="/">tadeas.dev</a></h1>
-		<span><a href="/rss">rss</a></span>
-		<span><a href="/about">about</a></span>
-		<span><a target="_blank" href="https://github.com/tadeaspaule">github</a></span>
-	</header>
-
+	
 	<div class="page-content">
-		<section class="section">
-			<div class="container">
-				<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-					<div style="flex: 1; min-width: 500px">
-						{% block content %} {% endblock %}
-					</div>
-					{% if current_path and config.extra.pages_with_sidebar is containing(current_path) %}
-					<div class="sidebar">
-						<h3 class="fade" style="margin-bottom: 6px;">
-							Recent links
-							<a href="/links/rss.xml">rss</a>
-						</h3>
-						{% set links = get_section(path="links/_index.md") %}
-						{% for link in links.pages %}
-							{{ macros::link(data=link) }}
-						{% endfor %}
-					</div>
-					{% endif %}
+		
+		<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+			<div style="flex: 1; min-width: 500px; display: flex; flex-direction: column">
+				<header>
+					<h1><a href="/">tadeas.dev</a></h1>
+					<span><a href="/rss">rss</a></span>
+					<span><a href="/about">about</a></span>
+					<span><a target="_blank" href="https://github.com/tadeaspaule">github</a></span>
+				</header>
+				<div style="flex: 1">
+					{% block content %} {% endblock %}
 				</div>
 			</div>
-		</section>
+			{% if current_path and config.extra.pages_with_sidebar is containing(current_path) %}
+			<div class="sidebar">
+				<h3 class="fade" style="margin-bottom: 6px;">
+					Recent links
+					<a href="/links/rss.xml">rss</a>
+				</h3>
+				{% set links = get_section(path="links/_index.md") %}
+				{% for link in links.pages %}
+					{{ macros::link(data=link) }}
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
 	</div>
 
 	<footer>

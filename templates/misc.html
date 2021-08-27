@@ -1,6 +1,9 @@
 {% macro details(data) -%}
 	<div class="details">
 		<span class="date fade">{{ data.date | date }}</span>
+		{% if data.draft %}
+		[draft]
+		{% endif %}
 		{% if data.taxonomies %}
 			{% for tag in data.taxonomies.tags %}
 				{% if tag != "s" %}
