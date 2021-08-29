@@ -14,7 +14,7 @@ First, here are some generated landmasses:
 
 {{ imagerow(width=180, paths=["/hc/screenshots/gen-landmass/normal-0.png","/hc/screenshots/gen-landmass/normal-1.png", "/hc/screenshots/gen-landmass/normal-2.png"]) }}
 
-I like them! Each has character, and will hopefully give rise to interesting storytelling; a mythical monster dwelling in the giant lake of the world on the left, merchant empires operating in the large inland see of the middle world, or an insular cult occupying the small island of the one on the right.
+I like them! Each has character, and will hopefully give rise to interesting storytelling; a mythical monster dwelling in the giant lake of the world on the left, merchant empires operating in the large inland sea of the middle world, or an insular cult occupying the small island of the one on the right.
 
 ### generation algorithm
 
@@ -27,7 +27,7 @@ Here is how the landmasses are generated:
 
 Pretty simple, right? It gets interesting when you start tweaking some of the parameters. Here are the most important ones:
 
-- `land_total` - how much landmass do we want? I set this to some random fraction of the total number of tiles, within some sensible range (vague words here since I'm still changing this. Let's say it's between 0.2 and 0.8)
+- `land_total` - how much land do we want? I set this to some random fraction of the total number of tiles, within some sensible range (vague words here since I'm still changing this. Let's say it's between 20% and 80%)
 - `points` - how many flood origin points (step #2.1) to pick. This also affects step #2.2, as the amount of flooding from each point is simply `land_total / points`
 - `expand_chance` - how likely is it to "flood" to a neighboring tile
 
@@ -35,7 +35,7 @@ Pretty simple, right? It gets interesting when you start tweaking some of the pa
 
 A brief look at how "flooding" works:
 
-1. create a list `all_pos`, initially containing the flooding's origin point
+1. create a list `all_pos`, initially containing the origin point
 2. create a list `pos`, initially also containing the origin point
 3. create a new list, `new_pos`, initially empty
 4. go through elements in `pos`, and look at each element's neighboring tiles
