@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
+	<div class="index-content">
 		{% set posts = get_section(path="posts/_index.md") %}
 		{% for post in posts.pages | slice(end=10) %}
 			{{ macros::post(data=post, excerpt=true) }}
 		{% endfor %}
+	</div>
 {% endblock content %}

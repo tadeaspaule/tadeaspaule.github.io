@@ -1,0 +1,17 @@
+{% import "misc.html" as misc %}
+<div class="img-row">
+	<div class="images">
+		{% for img in paths %}
+			{% if width %}
+				{{ misc::image(url=img,desc="",width=width) }}
+			{% else %}
+				{{ misc::image(url=img,desc="",width=100) }}
+			{% endif %}
+		{% endfor %}
+	</div>
+	{% if desc %}
+		<div class="img-desc" style="text-align: center">
+			{{desc | markdown | safe }}
+		</div>
+	{% endif %}
+</div>

@@ -14,3 +14,14 @@
 	</div>
 {% endmacro details -%}
 
+{% macro image(url,desc="",width=100) %}
+<div class="img">
+	<a href="{{url}}" alt="{{desc}}">
+		<img class="full" src="{{url}}" width="{{width}}px"/>
+	</a>
+	{% if show_desc %}
+		<p class="image-desc"> {{desc}} </p>
+	{% endif %}
+</div>
+{% endmacro image %}
+

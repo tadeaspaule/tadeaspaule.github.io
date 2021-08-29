@@ -54,7 +54,9 @@ body {
 }
 
 p {
-	margin-top: 2px;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 4px;
 }
 
 .paginator {
@@ -68,15 +70,57 @@ p {
 	}
 }
 
+.img {
+	margin: 0px 5px;
+}
+.img-row {
+	align-items: center;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	.images {
+		display: flex;
+		flex-direction: row;
+	}
+	.img-desc p {
+		margin: 0;
+	}
+}
+
 .fade {
 	font-weight: 400;
 	color: $fade-color;
 }
 
-h1,h2,h3,h4,h5 {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 2px;
+code {
+	font-size: 14px;
+	color: #ddd;
+}
+
+header, .sidebar, .index-content, .taglist-content, .post, .link {
+	h1,h2,h3,h4,h5 {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 2px;
+	}
+}
+
+.taglist-content h2.title {
+	margin-bottom: 6px;
+}
+
+.basic-content, .post-content {
+	h1:not(.title),h2,h3,h4,h5 {
+		margin: 4px 0;
+		margin-top: 10px;
+		padding: 0;
+	}
+	h1.title {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 2px;
+	}
 }
 
 a {
@@ -87,10 +131,20 @@ a {
 	text-decoration: none;
 }
 
-ul {
-	margin: 0;
+ul, ol {
+	margin: 6px 0;
 	padding: 0;
+	li {
+		margin: 2px 0;
+	}
+}
+
+ul {
 	padding-left: 18px;
+}
+
+ol {
+	padding-left: 24px;
 }
 
 .sidebar {

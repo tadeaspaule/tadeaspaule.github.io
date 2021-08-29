@@ -19,7 +19,7 @@
 		<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
 			<div style="flex: 1; min-width: 500px; display: flex; flex-direction: column">
 				<header>
-					<h1><a href="/">tadeas.dev</a></h1>
+					<h1><a href="/">tadeas</a></h1>
 					<span><a href="/rss">rss</a></span>
 					<span><a href="/about">about</a></span>
 					<span><a target="_blank" href="https://github.com/tadeaspaule">github</a></span>
@@ -29,16 +29,29 @@
 				</div>
 			</div>
 			{% if current_path and config.extra.pages_with_sidebar is containing(current_path) %}
-			<div class="sidebar">
-				<h3 class="fade" style="margin-bottom: 6px;">
-					Recent links
-					<a href="/links/rss.xml">rss</a>
-				</h3>
-				{% set links = get_section(path="links/_index.md") %}
-				{% for link in links.pages %}
-					{{ macros::link(data=link) }}
-				{% endfor %}
-			</div>
+				<div class="sidebar">
+					<h3 class="fade" style="margin-bottom: 6px;">
+						Recent links
+						<a href="/links/rss.xml">rss</a>
+					</h3>
+					{% set links = get_section(path="links/_index.md") %}
+					{% for link in links.pages | slice(end=config.extra.sidebar_items) %}
+						{{ macros::link(data=link) }}
+					{% endfor %}
+				</div>
+			{% elif current_path and config.extra.projects_with_posts is containing(current_path) %}
+				{% set project_tag = "proj-" ~ current_path | replace(from="/", to="") %}
+				<div class="sidebar">
+					<h3 class="fade" style="margin-bottom: 6px;">
+						Recent posts tagged <a href="/tags/{{project_tag}}">#{{ project_tag }}</a>
+					</h3>
+					{% set posts = get_section(path="posts/_index.md") %}
+					{% for post in posts.pages %}
+						{% if post.taxonomies and post.taxonomies.tags is containing(project_tag) %}
+							{{ macros::post(data=post,excerpt=true) }}
+						{% endif %}
+					{% endfor %}
+				</div>
 			{% endif %}
 		</div>
 	</div>
