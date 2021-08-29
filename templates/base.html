@@ -32,7 +32,8 @@
 				<div class="sidebar">
 					<h3 class="fade" style="margin-bottom: 6px;">
 						Recent links
-						<a href="/links/rss.xml">rss</a>
+						[<a href="/links/rss.xml">rss</a>]
+						[<a href="/links">all</a>]
 					</h3>
 					{% set links = get_section(path="links/_index.md") %}
 					{% for link in links.pages | slice(end=config.extra.sidebar_items) %}
@@ -43,7 +44,7 @@
 				{% set project_tag = "proj-" ~ current_path | replace(from="/", to="") %}
 				<div class="sidebar">
 					<h3 class="fade" style="margin-bottom: 6px;">
-						Recent posts tagged <a href="/tags/{{project_tag}}">#{{ project_tag }}</a>
+						Recent tagged <a href="/tags/{{project_tag}}">#{{ project_tag }}</a>
 					</h3>
 					{% set posts = get_section(path="posts/_index.md") %}
 					{% for post in posts.pages %}
