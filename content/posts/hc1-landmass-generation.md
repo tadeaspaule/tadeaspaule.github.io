@@ -14,7 +14,7 @@ First, here are some generated landmasses:
 
 {{ imagerow(width=180, paths=["/hc/screenshots/gen-landmass/normal-0.png","/hc/screenshots/gen-landmass/normal-1.png", "/hc/screenshots/gen-landmass/normal-2.png"]) }}
 
-I like them! Each has character, and will hopefully give rise to intersting storytelling; a mythical monster dwelling in the giant lake of the world on the left, merchant empires operating in the large inland see of the middle world, or an insular cult occupying the small island of the one on the right.
+I like them! Each has character, and will hopefully give rise to interesting storytelling; a mythical monster dwelling in the giant lake of the world on the left, merchant empires operating in the large inland see of the middle world, or an insular cult occupying the small island of the one on the right.
 
 ### generation algorithm
 
