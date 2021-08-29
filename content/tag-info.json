@@ -1,4 +1,5 @@
 {
 	"cli": "command line interface",
-	"qs": "quantified self"
+	"qs": "quantified self",
+	"proc-gen": "procedural generation"
 }

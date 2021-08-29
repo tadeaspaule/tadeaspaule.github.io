@@ -3,7 +3,7 @@ title = "HC update #1 : landmass generation"
 date = 2021-08-29
 description = "First update on HC progress! Briefly about how I generate landmasses for the 2D map"
 [taxonomies]
-tags = ["proj-hc", "programming", "rust", "gamedev", "doing", "procedural-generation"]
+tags = ["proj-hc", "rust", "gamedev", "doing", "proc-gen"]
 +++
 
 First HC update! I'm working on map generation now, and wanted to write a bit about how I've done landmass generation. I know this has been done a million times already, but I went in blind and didn't look up any common approaches since I found the process of figuring out how to make it work fun, reinventing the wheel or not.

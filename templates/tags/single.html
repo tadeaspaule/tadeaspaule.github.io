@@ -8,16 +8,18 @@
 {% block content %}
 
 <div class="taglist-content">
-	<h2 class="title fade">
-		{% set tag_data = load_data(path="content/tag-info.json") %}
-		#{{ term.name }}
+	<div style="display: flex; flex-direction: row; align-items: center">
+		<h2 class="title fade">
+			{% set tag_data = load_data(path="content/tag-info.json") %}
+			#{{ term.name }}
+		</h2>
 		{% if tag_data is containing(term.name) %}
 			<span class="tag-alt">({{ tag_data | get(key=term.name,default="") }})</span>
 		{% elif term.name is starting_with("proj-") %}
 			{% set proj_name = term.name | replace(from="proj-", to="") %}
 			<span class="tag-alt">(posts about the <a href="/{{proj_name}}">{{proj_name}}</a> project)
 		{% endif %}
-	</h1>
+	</div>
 	{% for entry in term.pages %}
 		{% if entry.extra.url %}
 			{{ macros::link(data=entry, icon=true) }}
