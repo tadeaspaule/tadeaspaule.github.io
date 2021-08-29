@@ -5,7 +5,14 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>tadeas.dev</title>
+	{% if page %}
+		{{ macros::titletags(title=page.title) }}
+		{{ macros::desctags(desc=page.description) }}
+	{% elif section %}
+		{{ macros::titletags(title=section.title) }}
+	{% else %}
+		{{ macros::titletags(title="tadeas.dev") }}
+	{% endif %}
 	<link rel="stylesheet" href="{{get_url(path="style.css")}}">
 	{% block rss %}
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">

@@ -43,3 +43,16 @@
 		</div>
 	{% endif %}
 {% endmacro %}
+
+{% macro titletags(title) %}
+	<title>tadeas.dev - {{ title }}</title>
+	<meta name="twitter:title" content="tadeas.dev - {{ title }}"/>
+	<meta property="og:title" content="tadeas.dev - {{ title }}"/>
+{% endmacro %}
+
+{% macro desctags(desc) %}
+	<meta name="description" content="{{desc}}">
+	<meta name="twitter:description" content="{{desc}}"/>
+	<meta property="og:description" content="{{desc}}"/>
+{% endmacro %}
+
