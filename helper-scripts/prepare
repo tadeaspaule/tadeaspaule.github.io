@@ -11,6 +11,8 @@ def clean_link_title(title: str):
     return "".join(c for c in title if c.isalnum())
 def link_to_file(url: str, title: str, desc: str, tags: list, date: str):
     datetime_rfc_format = date[:10] + "T" + date[11:] + "Z"
+    title = title.replace('"', "'")
+    desc = desc.replace('"', "'")
     return (
         f'+++\n'
         f'title="{title}"\n'
