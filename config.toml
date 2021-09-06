@@ -8,7 +8,7 @@ compile_sass = true
 build_search_index = false
 
 generate_feed = true
-feed_filename = "rss.xml"
+feed_filename = "feed.xml"
 
 taxonomies = [
 	{ name = "tags", feed = true }

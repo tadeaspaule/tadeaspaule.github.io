@@ -15,7 +15,7 @@
 	{% endif %}
 	<link rel="stylesheet" href="{{get_url(path="style.css")}}">
 	{% block rss %}
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="feed.xml", trailing_slash=false) }}">
 	{% endblock %}
 </head>
 
@@ -39,7 +39,7 @@
 				<div class="sidebar">
 					<h3 class="fade" style="margin-bottom: 6px;">
 						Recent links
-						[<a href="/links/rss.xml">rss</a>]
+						[<a href="/links/feed.xml">rss</a>]
 						[<a href="/links">all</a>]
 					</h3>
 					{% set links = get_section(path="links/_index.md") %}

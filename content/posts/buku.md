@@ -17,5 +17,5 @@ tldr:
 
 My boku db now powers the links shared on this site! I add a `share` tag when it's something I want displayed here, and use the `time_added` field to sort them.
 
-[Zola](https://www.getzola.org/) + buku is a great combo thanks to tags. Not only can you see everything related to, for example, [cli](/tags/cli) (be it a link, a post, etc), but each tag has its own automatically generated [RSS feed](https://www.getzola.org/documentation/templates/feeds/). For example, a feed for `cli` is at `/tags/cli/rss.xml`.
+[Zola](https://www.getzola.org/) + buku is a great combo thanks to tags. Not only can you see everything related to, for example, [cli](/tags/cli) (be it a link, a post, etc), but each tag has its own automatically generated [RSS feed](https://www.getzola.org/documentation/templates/feeds/). For example, a feed for `cli` is at `/tags/cli/feed.xml`.
 

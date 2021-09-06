@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		{% if taxonomy and term %}
+			<title>tadeas.dev #{{term.name}}</title>
+		{% else %}
+			<title>tadeas.dev</title>
+		{% endif %}
+		<!-- <link>{{feed_url}}</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="{{feed_url}}" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>{{last_updated}}</lastBuildDate>
+		{% for page in pages %}
+		{% if page.draft == false %}
+			<item>
+				{% if page.taxonomies and page.taxonomies.tags %}
+				{% set tags = page.taxonomies.tags %}
+				{% else %}
+				{% set tags = [] %}
+				{% endif %}
+				{% if page.extra and page.extra.url %}
+				{% set desc = page.description %}
+				{% set item_title = "[link] " ~ page.title %}
+				{% set item_url = page.extra.url %}
+				{% else %}
+				{% set desc = page.content %}
+				{% set item_title = "[post] " ~ page.title %}
+				{% set item_url = page.permalink %}
+				{% endif %}
+				<pubDate>{{page.date}}</pubDate>
+				{% for tag in tags %}
+				{% if tag != "s" %}
+					<category>{{tag}}</category>
+				{% endif %}
+				{% endfor %}
+					<title>{{item_title}}</title>
+				<link>{{item_url}}</link>
+				<guid>{{item_url}}</guid>
+				{% if not page.extra or not page.extra.url %}
+					<dc:creator>Tadeas Paule</dc:creator>
+				{% endif %}
+				<description>
+					{% for tag in tags %}
+					{% if tag != "s" %}
+						#{{tag}} 
+					{% endif %}
+					{% endfor %}
+					{% if tags %}
+						&lt;br&gt;
+						&lt;br&gt;
+					{% endif %}
+					{{desc}}
+				</description>
+			</item>
+		{% endif %}
+		{% endfor %}
+	</channel>
+</rss>
+

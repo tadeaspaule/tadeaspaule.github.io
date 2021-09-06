@@ -1,9 +1,10 @@
 #!/bin/bash
 
-./delete-link-files
-./prepare
+scripts_dir="$HOME/site/helper-scripts"
+$scripts_dir/delete-link-files
+$scripts_dir/prepare
 zola build
-./delete-link-files
+$scripts_dir/delete-link-files
 
 cd public
 echo 'tadeas.dev' > CNAME
