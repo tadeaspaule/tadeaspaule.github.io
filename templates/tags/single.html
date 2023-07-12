@@ -21,11 +21,7 @@
 		{% endif %}
 	</div>
 	{% for entry in term.pages %}
-		{% if entry.extra.url %}
-			{{ macros::link(data=entry, icon=true) }}
-		{% else %}
-			{{ macros::post(data=entry, excerpt=true, icon=true) }}
-		{% endif %}
+    {{ macros::bit(data=entry) }}
 	{% endfor %}
 </div>
 

@@ -38,13 +38,14 @@
 			{% if current_path and config.extra.pages_with_sidebar is containing(current_path) %}
 				<div class="sidebar">
 					<h3 class="fade" style="margin-bottom: 6px;">
-						Recent links
-						[<a href="/links/feed.xml">rss</a>]
-						[<a href="/links">all</a>]
+						Recent bits
+						[<a href="/bits/feed.xml">rss</a>]
+						[<a href="/bits">all</a>]
 					</h3>
-					{% set links = get_section(path="links/_index.md") %}
+					{% set links = get_section(path="bits/_index.md") %}
 					{% for link in links.pages | slice(end=config.extra.sidebar_items) %}
-						{{ macros::link(data=link) }}
+						{{ macros::bit(data=link) }}
+            <hr>
 					{% endfor %}
 				</div>
 			{% elif current_path and config.extra.projects_with_posts is containing(current_path) %}
@@ -64,12 +65,8 @@
 		</div>
 	</div>
 
-	<footer>
-		This site is built using <a href="https://getzola.org" target="_blank">Zola</a>.
-		The content for this site is <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>.
-		The <a href="https://github.com/tadeaspaule/tadeaspaule.github.io" target="_blank">code for this site</a> is <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>.
-	</footer>
-</body>
+	</body>
 
 </html>
+
 

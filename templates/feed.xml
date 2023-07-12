@@ -24,13 +24,11 @@
 				{% else %}
 				{% set tags = [] %}
 				{% endif %}
+				{% set desc = page.content %}
+				{% set item_title = page.title %}
 				{% if page.extra and page.extra.url %}
-				{% set desc = page.description %}
-				{% set item_title = "[link] " ~ page.title %}
 				{% set item_url = page.extra.url %}
 				{% else %}
-				{% set desc = page.content %}
-				{% set item_title = "[post] " ~ page.title %}
 				{% set item_url = page.permalink %}
 				{% endif %}
 				<pubDate>{{page.date}}</pubDate>

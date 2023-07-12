@@ -1,7 +1,7 @@
 +++
-title = "List of links"
+title = "List of interesting links"
 sort_by = "date"
-template = "links.html"
+template = "bits.html"
 page_template = "basic.html"
 paginate_by = 20
 generate_feed = true

@@ -1,6 +1,6 @@
 public/
-content/links/*
-!content/links/_index.md
+content/bits/*
+!content/bits/_index.md
 content/drafts/*
 !content/drafts/_index.md
 

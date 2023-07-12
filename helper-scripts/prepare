@@ -1,32 +1,78 @@
 #!/usr/bin/env python3
 
+import re
 import os
-import sqlite3
+import datetime
 
-# get new links
-con = sqlite3.connect(os.environ["HOME"] + "/.local/share/buku/bookmarks.db")
-cur = con.cursor()
-links = cur.execute("select url, metadata, desc, tags, time_added from bookmarks where tags like '%,s,%' order by time_added desc").fetchall()
-def clean_link_title(title: str):
-    return "".join(c for c in title if c.isalnum())
-def link_to_file(url: str, title: str, desc: str, tags: list, date: str):
-    datetime_rfc_format = date[:10] + "T" + date[11:] + "Z"
-    title = title.replace('"', "'")
-    desc = desc.replace('"', "'")
-    return (
-        f'+++\n'
-        f'title="{title}"\n'
-        f'description="{desc}"\n'
-        f'date={datetime_rfc_format}\n'
-        f'[taxonomies]\n'
-        'tags=[' + ",".join("\"" + t + "\"" for t in tags) + ']\n'
-        "[extra]\n"
-        f'url="{url}"\n'
-        "+++\n"
-    )
+ignore_tags = ["10", "2r"]
 
-for l in links:
-    with open(f"content/links/{clean_link_title(l[1])}.md", "w+") as f:
-        cleaned_tags = [t for t in l[3].split(",") if len(t) > 0]
-        f.write(link_to_file(l[0], l[1], l[2], cleaned_tags, l[4]))
+def process_block(block: str, links: list[str], date: datetime.datetime):
+  datetime_rfc_format = date.strftime("%Y-%m-%d")
+  # find all #tag in block
+  tags = re.findall(r"#\w+", block)
+  for t in tags:
+    block = block.replace(t, "")
+  tags = [t[1:] for t in tags if t[1:] not in ignore_tags]
+  block = block[2:]
+  block = block.strip()
+  title = block.replace("|","")
+  content = ""
+  extra = ""
+  if len(links) == 1:
+    content = f"[{block}]({links[0]})"
+    extra = f'[extra]\nurl="{links[0]}"\n'
+  else:
+    inside_link = False
+    i = 0
+    while i < len(block):
+      if block[i] == "|":
+        inside_link = not inside_link
+        if not inside_link:
+          content += f"]({links.pop(0)})"
+        else:
+          content += "["
+      else:
+        content += block[i]
+      i += 1
+  fc = (
+    f'+++\n'
+    f'title="{title}"\n'
+    f'date={datetime_rfc_format}\n'
+    f'[taxonomies]\n'
+    'tags=[' + ",".join("\"" + t + "\"" for t in tags) + ']\n'
+    f"{extra}"
+    "+++\n"
+    f"{content}"
+  )
+  with open(f"/home/tadeas/projects/tadeaspaule.github.io/content/bits/{title.replace('/','')}.md", "w+") as f:
+    f.write(fc)
+
+
+
+last_date = datetime.datetime(2023, 6, 10)
+today = datetime.datetime.today()
+daydiff = (today - last_date).days
+for i in range(1, daydiff):
+  d = (last_date + datetime.timedelta(days=i))
+  fname = d.strftime("%Y_%m_%d.md")
+  path = f"/home/tadeas/Mysynced/logseq/journals/{fname}"
+  if not os.path.isfile(path):
+    continue
+  with open(path, "r") as f:
+    lines = f.readlines()
+  i = 0
+  while i < len(lines):
+    if lines[i].find("#10") != -1:
+      links = []
+      j = 1
+      while i + j < len(lines) and lines[i+j][0] == "\t":
+        if not lines[i+j].startswith("\t- http"):
+          j += 1
+          continue
+        links.append(lines[i+j][2:].strip())
+        j += 1
+      process_block(lines[i], links, d)
+      i = i + j
+    else:
+      i += 1
 

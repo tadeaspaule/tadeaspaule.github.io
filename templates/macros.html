@@ -1,18 +1,18 @@
 {% macro link(data, icon=false) -%}
 	<div class="link">
-		<h3><a target="_blank" href="{{ data.extra.url }}">
-				{% if icon %}⤤{% endif %}
-				{{ data.title | markdown(inline=true) | safe }}
-		</a></h3>
-		{{ misc::details(data=data) }}
-		<div class="link-desc">
-			{% if data.description %}
-				{{ data.description | markdown(inline=true) | safe }}
-			{% endif %}
-		</div>
+    {{data.content | safe}}
 	</div>
 
 {% endmacro link -%}
+
+{% macro bit(data) -%}
+	<div class="post">
+    {{ data.content | safe }}
+		{{ misc::details(data=data) }}
+	</div>
+
+{% endmacro bit -%}
+
 
 {% macro post(data, excerpt=false, icon=false) -%}
 	<div class="post">

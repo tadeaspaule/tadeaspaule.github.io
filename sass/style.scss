@@ -59,6 +59,30 @@ p {
 	margin-bottom: 4px;
 }
 
+a {
+	color: $link-color;
+	* {
+		color: $link-color;
+	}
+	text-decoration: none;
+}
+
+ul, ol {
+	margin: 6px 0;
+	padding: 0;
+	li {
+		margin: 2px 0;
+	}
+}
+
+ul {
+	padding-left: 18px;
+}
+
+ol {
+	padding-left: 24px;
+}
+
 .paginator {
 	margin: 5px 0px;
 	span {
@@ -123,30 +147,6 @@ header, .sidebar, .index-content, .taglist-content, .post, .link {
 	}
 }
 
-a {
-	color: $link-color;
-	* {
-		color: $link-color;
-	}
-	text-decoration: none;
-}
-
-ul, ol {
-	margin: 6px 0;
-	padding: 0;
-	li {
-		margin: 2px 0;
-	}
-}
-
-ul {
-	padding-left: 18px;
-}
-
-ol {
-	padding-left: 24px;
-}
-
 .sidebar {
 	flex: 0;
 	min-width: 300px;
@@ -160,11 +160,20 @@ ol {
 	flex-wrap: wrap;
 	margin-bottom: 4px;
 	.tag {
-		color: $link-color;
 		margin: 0px 3px;
+    color: $fade-color !important;
+    * {
+      color: $fade-color;
+      &:hover {
+        color: $link-color;
+      }
+    }
 		&::before {
 			content: "#"
 		}
+    &:hover {
+      color: $link-color;
+    }
 	}
 }
 

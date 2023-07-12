@@ -3,7 +3,7 @@
 {% block content %}
 {{ macros::paginator(paginator=paginator)}}
 {% for link in paginator.pages %}
-	{{ macros::link(data=link) }}
+	{{ macros::bit(data=link) }}
 {% endfor %}
 {{ macros::paginator(paginator=paginator)}}
 {% endblock content %}
