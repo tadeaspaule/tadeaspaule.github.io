@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="basic-content">
+  {% set blurb = get_page(path="blurb.md") %}
+	{{ blurb.content | safe }}
+  {% set about = get_page(path="about.md") %}
+	{{ about.content | safe }}
+</div>
+
+{% endblock content %}
+

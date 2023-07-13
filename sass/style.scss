@@ -130,8 +130,15 @@ header, .sidebar, .index-content, .taglist-content, .post, .link {
 	}
 }
 
+.index-content .intro {
+  font-size: 22px;
+}
+
 .taglist-content h2.title {
 	margin-bottom: 6px;
+}
+.taglist-content.all-tags a {
+  margin: 3px 5px;
 }
 
 .basic-content, .post-content {

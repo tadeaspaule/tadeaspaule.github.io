@@ -2,6 +2,8 @@
 
 {% block content %}
 	<div class="index-content">
+		{% set blurb = get_page(path="blurb.md") %}
+    <div class="intro">{{ blurb.content | safe}}</div>
 		{% set posts = get_section(path="posts/_index.md") %}
 		{% for post in posts.pages | slice(end=10) %}
 			{{ macros::post(data=post, excerpt=true) }}

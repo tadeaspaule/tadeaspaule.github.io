@@ -1,5 +1,9 @@
 {
 	"cli": "command line interface",
 	"qs": "quantified self",
-	"proc-gen": "procedural generation"
+	"proc-gen": "procedural generation",
+  "rl": "reinforcement learning",
+  "ai": "artificial intelligence",
+  "bci": "brain computer interface",
+  "llm": "large language model"
 }

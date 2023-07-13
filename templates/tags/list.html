@@ -2,15 +2,13 @@
 
 {% block content %}
 
-<div class="taglist-content">
+<div class="taglist-content all-tags">
 	<h1 class="title">
 		Tags
 	</h1>
-	<ul>
 		{% for tag in terms %}
-			<li><a href="{{ tag.permalink | safe }}">{{ tag.name }}</a></li>
+			<a href="{{ tag.permalink | safe }}">{{ tag.name }}</a>
 		{% endfor %}
-	</ul>
 </div>
 
 {% endblock content %}
