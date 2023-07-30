@@ -10,7 +10,6 @@
 <div class="taglist-content">
 	<div style="display: flex; flex-direction: row; align-items: center">
 		<h2 class="title fade">
-			{% set tag_data = load_data(path="content/tag-info.json") %}
 			#{{ term.name }}
 		</h2>
 		{% if tag_data is containing(term.name) %}

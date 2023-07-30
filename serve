@@ -1,5 +1,5 @@
 #!/bin/bash
 
-./helper-scripts/delete-link-files
+# ./helper-scripts/delete-link-files
 ./helper-scripts/prepare
 zola serve --drafts

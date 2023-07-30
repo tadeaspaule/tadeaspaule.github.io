@@ -7,7 +7,7 @@
 		Tags
 	</h1>
 		{% for tag in terms %}
-			<a href="{{ tag.permalink | safe }}">{{ tag.name }}</a>
+			<a href="{{ tag.permalink | safe }}">{{ tag_data | get(key=tag.name,default=tag.name) }}</a>
 		{% endfor %}
 </div>
 

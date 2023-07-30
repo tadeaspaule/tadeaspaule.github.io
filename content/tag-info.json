@@ -4,6 +4,9 @@
 	"proc-gen": "procedural generation",
   "rl": "reinforcement learning",
   "ai": "artificial intelligence",
-  "bci": "brain computer interface",
-  "llm": "large language model"
+  "bci": "brain computer interfaces",
+  "aia": "AI assistant",
+  "llm": "large language models",
+  "cc": "climate change",
+  "toc": "tragedy of the commons"
 }
