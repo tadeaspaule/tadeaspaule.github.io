@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #maps</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;maps&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;maps&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-10</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-10</pubDate>
+				
+				
+					<category>maps</category>
+				
+				
+				
+					<category>perspective</category>
+				
+				
+				
+					<category>bias</category>
+				
+				
+				
+					<category>history</category>
+				
+				
+				
+					<category>geography</category>
+				
+				
+					<title>Interesting video on why North is up on maps. This is a good companion blog post: maps distort how we see the world</title>
+				<link>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;interesting-video-on-why-north&#x2F;</link>
+				<guid>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;interesting-video-on-why-north&#x2F;</guid>
+				
+					<dc:creator>Tadeas Paule</dc:creator>
+				
+				<description>
+					
+					
+						#maps 
+					
+					
+					
+						#perspective 
+					
+					
+					
+						#bias 
+					
+					
+					
+						#history 
+					
+					
+					
+						#geography 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=B14Gtm2Z_70&quot;&gt;Interesting video on why North is up on maps&lt;&#x2F;a&gt;. This is a good companion blog post: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unchartedterritories.tomaspueyo.com&#x2F;p&#x2F;maps-distort-how-we-see-the-world&quot;&gt;maps distort how we see the world&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

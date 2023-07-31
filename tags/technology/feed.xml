@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #technology</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;technology&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;technology&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-10</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-10</pubDate>
+				
+				
+					<category>book</category>
+				
+				
+				
+					<category>technology</category>
+				
+				
+				
+					<category>science</category>
+				
+				
+					<title>Interesting book, How to invent everything: a survival guide for the stranded time traveller</title>
+				<link>https:&#x2F;&#x2F;www.howtoinventeverything.com&#x2F;</link>
+				<guid>https:&#x2F;&#x2F;www.howtoinventeverything.com&#x2F;</guid>
+				
+				<description>
+					
+					
+						#book 
+					
+					
+					
+						#technology 
+					
+					
+					
+						#science 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.howtoinventeverything.com&#x2F;&quot;&gt;Interesting book, How to invent everything: a survival guide for the stranded time traveller&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #brain</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;brain&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;brain&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-02</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-02</pubDate>
+				
+				
+					<category>brain</category>
+				
+				
+				
+					<category>neuroscience</category>
+				
+				
+				
+					<category>bci</category>
+				
+				
+					<title>Whole brain connectome of a fruitfly was released</title>
+				<link>https:&#x2F;&#x2F;twitter.com&#x2F;sdorkenw&#x2F;status&#x2F;1674859033076072448?t=lhp2bAki0q83E56JDtTn5g&amp;s=19</link>
+				<guid>https:&#x2F;&#x2F;twitter.com&#x2F;sdorkenw&#x2F;status&#x2F;1674859033076072448?t=lhp2bAki0q83E56JDtTn5g&amp;s=19</guid>
+				
+				<description>
+					
+					
+						#brain 
+					
+					
+					
+						#neuroscience 
+					
+					
+					
+						#bci 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;sdorkenw&#x2F;status&#x2F;1674859033076072448?t=lhp2bAki0q83E56JDtTn5g&amp;amp;s=19&quot;&gt;Whole brain connectome of a fruitfly was released&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #llama</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;llama&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;llama&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-23</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-23</pubDate>
+				
+				
+					<category>meta</category>
+				
+				
+				
+					<category>ai</category>
+				
+				
+				
+					<category>metaco</category>
+				
+				
+				
+					<category>llama</category>
+				
+				
+					<title>Qualcomm is working with Meta on on-device AI apps with llama2    co</title>
+				<link>https:&#x2F;&#x2F;www.qualcomm.com&#x2F;news&#x2F;releases&#x2F;2023&#x2F;07&#x2F;qualcomm-works-with-meta-to-enable-on-device-ai-applications-usi</link>
+				<guid>https:&#x2F;&#x2F;www.qualcomm.com&#x2F;news&#x2F;releases&#x2F;2023&#x2F;07&#x2F;qualcomm-works-with-meta-to-enable-on-device-ai-applications-usi</guid>
+				
+				<description>
+					
+					
+						#meta 
+					
+					
+					
+						#ai 
+					
+					
+					
+						#metaco 
+					
+					
+					
+						#llama 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.qualcomm.com&#x2F;news&#x2F;releases&#x2F;2023&#x2F;07&#x2F;qualcomm-works-with-meta-to-enable-on-device-ai-applications-usi&quot;&gt;Qualcomm is working with Meta on on-device AI apps with llama2    co&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-18</pubDate>
+				
+				
+					<category>ai</category>
+				
+				
+				
+					<category>llm</category>
+				
+				
+				
+					<category>llama</category>
+				
+				
+				
+					<category>metaco</category>
+				
+				
+					<title>Meta releases llama-v2, this time also available for commercial use</title>
+				<link>https:&#x2F;&#x2F;ai.meta.com&#x2F;llama&#x2F;</link>
+				<guid>https:&#x2F;&#x2F;ai.meta.com&#x2F;llama&#x2F;</guid>
+				
+				<description>
+					
+					
+						#ai 
+					
+					
+					
+						#llm 
+					
+					
+					
+						#llama 
+					
+					
+					
+						#metaco 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ai.meta.com&#x2F;llama&#x2F;&quot;&gt;Meta releases llama-v2, this time also available for commercial use&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

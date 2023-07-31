@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #github</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;github&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;github&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-27</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-27</pubDate>
+				
+				
+					<category>github</category>
+				
+				
+				
+					<category>foss</category>
+				
+				
+				
+					<category>programming</category>
+				
+				
+					<title>Cool bot that tweets the top trending GitHub repos of the day and week</title>
+				<link>https:&#x2F;&#x2F;twitter.com&#x2F;trending_repos?t=dd7D_VB5XXd7nlMK9XT5Dg&amp;s=09</link>
+				<guid>https:&#x2F;&#x2F;twitter.com&#x2F;trending_repos?t=dd7D_VB5XXd7nlMK9XT5Dg&amp;s=09</guid>
+				
+				<description>
+					
+					
+						#github 
+					
+					
+					
+						#foss 
+					
+					
+					
+						#programming 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;trending_repos?t=dd7D_VB5XXd7nlMK9XT5Dg&amp;amp;s=09&quot;&gt;Cool bot that tweets the top trending GitHub repos of the day and week&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

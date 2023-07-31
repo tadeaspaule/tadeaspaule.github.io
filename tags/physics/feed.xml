@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #physics</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;physics&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;physics&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-26</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-26</pubDate>
+				
+				
+					<category>physics</category>
+				
+				
+					<title>A room temperature superconductor might have been discovered? Here is a nice timeline of the paper&#x27;s authors journeys, here is an explanation of what superconductors are and what room temperature ones would mean for the world</title>
+				<link>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;a-room-temperature-superconduc&#x2F;</link>
+				<guid>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;a-room-temperature-superconduc&#x2F;</guid>
+				
+					<dc:creator>Tadeas Paule</dc:creator>
+				
+				<description>
+					
+					
+						#physics 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;A room temperature superconductor &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2307.12008&quot;&gt;might have been discovered&lt;&#x2F;a&gt;? &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;8teAPi&#x2F;status&#x2F;1684586672917565443?t=J7DcL05FwZkcsuwSQgg38A&amp;amp;s=19&quot;&gt;Here&lt;&#x2F;a&gt; is a nice timeline of the paper&#x27;s authors journeys, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Andercot&#x2F;status&#x2F;1685088625187495936?t=oaWwWKnFBIkPuOaVosoEnA&amp;amp;s=19&quot;&gt;here&lt;&#x2F;a&gt; is an explanation of what superconductors are and what room temperature ones would mean for the world&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

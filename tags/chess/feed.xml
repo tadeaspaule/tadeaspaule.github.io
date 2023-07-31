@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #chess</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;chess&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;chess&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-11</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-11</pubDate>
+				
+				
+					<category>chess</category>
+				
+				
+					<title>Cute video about hexagonal chess, if you like it a good followup is Hexagons are the Bestagons</title>
+				<link>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;cute-video-about-hexagonal-che&#x2F;</link>
+				<guid>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;cute-video-about-hexagonal-che&#x2F;</guid>
+				
+					<dc:creator>Tadeas Paule</dc:creator>
+				
+				<description>
+					
+					
+						#chess 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=bgR3yESAEVE&quot;&gt;Cute video about hexagonal chess&lt;&#x2F;a&gt;, if you like it a good followup is &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=thOifuHs6eY&quot;&gt;Hexagons are the Bestagons&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

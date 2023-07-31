@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #tferriss</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;tferriss&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;tferriss&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-25</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-25</pubDate>
+				
+				
+					<category>tferriss</category>
+				
+				
+				
+					<category>documentaries</category>
+				
+				
+					<title>Tim Ferriss&#x27; list of favourite documentaries</title>
+				<link>https:&#x2F;&#x2F;tim.blog&#x2F;2022&#x2F;04&#x2F;13&#x2F;tim-ferriss-favorite-documentaries&#x2F;</link>
+				<guid>https:&#x2F;&#x2F;tim.blog&#x2F;2022&#x2F;04&#x2F;13&#x2F;tim-ferriss-favorite-documentaries&#x2F;</guid>
+				
+				<description>
+					
+					
+						#tferriss 
+					
+					
+					
+						#documentaries 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tim.blog&#x2F;2022&#x2F;04&#x2F;13&#x2F;tim-ferriss-favorite-documentaries&#x2F;&quot;&gt;Tim Ferriss&#x27; list of favourite documentaries&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

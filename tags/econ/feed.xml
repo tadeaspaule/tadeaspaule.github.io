@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #econ</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;econ&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;econ&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-17</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-17</pubDate>
+				
+				
+					<category>cc</category>
+				
+				
+				
+					<category>oceans</category>
+				
+				
+				
+					<category>toc</category>
+				
+				
+				
+					<category>econ</category>
+				
+				
+					<title>The broken economics of the oceans, a somber broad look at several tragedies of the commons happening in the oceans</title>
+				<link>https:&#x2F;&#x2F;youtu.be&#x2F;73ygHs4Kwcs</link>
+				<guid>https:&#x2F;&#x2F;youtu.be&#x2F;73ygHs4Kwcs</guid>
+				
+				<description>
+					
+					
+						#cc 
+					
+					
+					
+						#oceans 
+					
+					
+					
+						#toc 
+					
+					
+					
+						#econ 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;73ygHs4Kwcs&quot;&gt;The broken economics of the oceans, a somber broad look at several tragedies of the commons happening in the oceans&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+

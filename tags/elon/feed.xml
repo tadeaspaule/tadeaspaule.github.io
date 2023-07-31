@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+	<channel>
+		
+			<title>tadeas.dev #elon</title>
+		
+		<!-- <link>https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;elon&#x2F;feed.xml</link> -->
+		<link>https://tadeas.dev</link>
+		<description/>
+		<generator>Zola</generator>
+		<language>en</language>
+		<atom:link href="https:&#x2F;&#x2F;tadeas.dev&#x2F;tags&#x2F;elon&#x2F;feed.xml" rel="self" type="application/rss+xml"/>
+		<lastBuildDate>2023-07-13</lastBuildDate>
+		
+		
+			<item>
+				
+				
+				
+				
+				
+				
+				
+				
+				<pubDate>2023-07-13</pubDate>
+				
+				
+					<category>ai</category>
+				
+				
+				
+					<category>elon</category>
+				
+				
+					<title>Elon Musk launched x.ai, here is a summary of the launch event</title>
+				<link>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;elon-musk-launched-x-ai-here&#x2F;</link>
+				<guid>https:&#x2F;&#x2F;tadeas.dev&#x2F;bits&#x2F;elon-musk-launched-x-ai-here&#x2F;</guid>
+				
+					<dc:creator>Tadeas Paule</dc:creator>
+				
+				<description>
+					
+					
+						#ai 
+					
+					
+					
+						#elon 
+					
+					
+					
+						&lt;br&gt;
+						&lt;br&gt;
+					
+					&lt;p&gt;Elon Musk launched &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;x.ai&quot;&gt;x.ai&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;EdKrassen&#x2F;status&#x2F;1679971231280365568?t=HqOfPPROU_H8mYMmk2myUA&amp;amp;s=19&quot;&gt;here&lt;&#x2F;a&gt; is a summary of the launch event&lt;&#x2F;p&gt;
+
+				</description>
+			</item>
+		
+		
+	</channel>
+</rss>
+
